@@ -8,6 +8,7 @@ const Content = ({msg}) => {
                 <input placeholder="Chat with smarta..."/>
             </div>
             <div className="smarta">{msg}</div>
+            <img src={require('../g.gif')} alt="" />
         </div>
     )
 }

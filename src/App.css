@@ -57,8 +57,16 @@ input::placeholder {
     font-size: 1.2rem;
 }
 .smarta {
-    margin: 5rem 0;
+    margin: 4rem 0;
     font-size: 2rem;
     color: white;
     padding: 1rem;
+}
+
+img {
+    opacity: 0;
+    width: 5rem;
+}
+.show {
+    opacity: 1;
 }

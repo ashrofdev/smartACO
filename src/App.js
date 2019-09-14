@@ -3,6 +3,7 @@ import './App.css';
 import 'font-awesome/css/font-awesome.min.css'
 import Content from './components/Content';
 
+
 class App extends Component {
   constructor(props){
     super(props)
@@ -19,9 +20,10 @@ class App extends Component {
     })
   }
 
-  onChat = () => {
+  onChat = async () => {
+    document.querySelector('img').classList.add('show')
     const msg = document.querySelector('input').value
-    fetch(`https://acobot-brainshop-ai-v1.p.rapidapi.com/get?bid=178&key=sX5A2PcYZbsN5EY6&uid=mashape&msg=${msg}`, {
+    await fetch(`https://acobot-brainshop-ai-v1.p.rapidapi.com/get?bid=178&key=sX5A2PcYZbsN5EY6&uid=mashape&msg=${msg}`, {
       "method": "GET",
       "headers": {
         "x-rapidapi-host": "acobot-brainshop-ai-v1.p.rapidapi.com",
@@ -32,11 +34,14 @@ class App extends Component {
       return response.json()
     })
     .then(data => {
+      document.querySelector('img').classList.remove('show')
       this.setState({msg: data.cnt})
       console.log(data)
     })
     .catch(err => {
-      console.log(err);
+      document.querySelector('img').classList.remove('show')
+      this.setState({msg: 'Bad Internet'})
+      console.log(err)
     });
   }
 
