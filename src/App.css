@@ -60,4 +60,5 @@ input::placeholder {
     margin: 5rem 0;
     font-size: 2rem;
     color: white;
+    padding: 1rem;
 }

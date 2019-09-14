@@ -11,7 +11,13 @@ class App extends Component {
     }
   }
   
-  
+  componentDidMount() {
+    window.addEventListener('keypress', (e)=>{
+      if (e.key === 'Enter') {
+        this.onChat()
+      }
+    })
+  }
 
   onChat = () => {
     const msg = document.querySelector('input').value
@@ -27,6 +33,7 @@ class App extends Component {
     })
     .then(data => {
       this.setState({msg: data.cnt})
+      console.log(data)
     })
     .catch(err => {
       console.log(err);

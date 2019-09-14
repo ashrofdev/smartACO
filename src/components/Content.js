@@ -1,11 +1,11 @@
 import React from 'react'
 
-const Content = ({onChat, msg}) => {
+const Content = ({msg}) => {
     return (
         <div className="cont">
             <h1>SMARTA</h1>
             <div className="request">
-                <input onInput={onChat} placeholder="Chat with smarta..."/>
+                <input placeholder="Chat with smarta..."/>
             </div>
             <div className="smarta">{msg}</div>
         </div>
