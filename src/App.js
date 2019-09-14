@@ -23,7 +23,7 @@ class App extends Component {
   onChat = async () => {
     document.querySelector('img').classList.add('show')
     const msg = document.querySelector('input').value
-    await fetch(`https://cors-anywhere.herokuapp.com/http://api.brainshop.ai/get?bid=8593&key=p3juMz7eL5DCcF5q&uid=67063${msg}`, {
+    fetch(`https://acobot-brainshop-ai-v1.p.rapidapi.com/get?bid=178&key=sX5A2PcYZbsN5EY6&uid=mashape&msg=${msg}`, {
       "method": "GET",
       "headers": {
         "x-rapidapi-host": "acobot-brainshop-ai-v1.p.rapidapi.com",
