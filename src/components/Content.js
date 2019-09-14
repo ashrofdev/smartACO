@@ -5,8 +5,9 @@ const Content = () => {
         <div className="cont">
             <h1>SMARTA</h1>
             <div className="request">
-                <input plceholder="Talk with "/>
+                <input placeholder="Chat with smarta..."/>
             </div>
+            <div className="smarta">result</div>
         </div>
     )
 }
