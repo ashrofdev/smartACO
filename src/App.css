@@ -58,4 +58,6 @@ input::placeholder {
 }
 .smarta {
     margin: 5rem 0;
+    font-size: 2rem;
+    color: white;
 }
