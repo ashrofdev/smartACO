@@ -24,14 +24,14 @@ class App extends Component {
   
 
   onChat = async () => {
-    document.querySelector('img').classList.add('show')
+    document.querySelector('.img').classList.add('show')
     const msg = document.querySelector('input').value
     fetch(`https://cors-anywhere.herokuapp.com/http://api.brainshop.ai/get?bid=8601&key=dtvRbKjZKR8GGZ4C&uid=67063&msg=${msg}`)
     .then(response => {
       return response.json()
     })
     .then(data => {
-      document.querySelector('img').classList.remove('show')
+      document.querySelector('.img').classList.remove('show')
       this.setState({msg: data.cnt})
       console.log(data)
     })
