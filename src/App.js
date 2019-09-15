@@ -26,13 +26,7 @@ class App extends Component {
   onChat = async () => {
     document.querySelector('img').classList.add('show')
     const msg = document.querySelector('input').value
-    fetch(`https://acobot-brainshop-ai-v1.p.rapidapi.com/get?bid=178&key=sX5A2PcYZbsN5EY6&uid=mashape&msg=${msg}`, {
-      "method": "GET",
-      "headers": {
-        "x-rapidapi-host": "acobot-brainshop-ai-v1.p.rapidapi.com",
-        "x-rapidapi-key": "34857597femsh6ed6990c729453fp1fdddcjsn7a5471db02b3"
-      }
-    })
+    fetch(`https://cors-anywhere.herokuapp.com/http://api.brainshop.ai/get?bid=8601&key=dtvRbKjZKR8GGZ4C&uid=67063&msg=${msg}`)
     .then(response => {
       return response.json()
     })
