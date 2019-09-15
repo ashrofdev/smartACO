@@ -94,4 +94,14 @@ img {
     h1 {
         padding: 1.5rem;
     }
+    .cont {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .request {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
 } 
