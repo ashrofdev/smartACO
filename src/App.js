@@ -4,6 +4,8 @@ import 'font-awesome/css/font-awesome.min.css'
 import Content from './components/Content';
 
 
+
+
 class App extends Component {
   constructor(props){
     super(props)
@@ -19,6 +21,7 @@ class App extends Component {
       }
     })
   }
+  
 
   onChat = async () => {
     document.querySelector('img').classList.add('show')
@@ -56,4 +59,5 @@ class App extends Component {
   }
 }
 
-export default App;
+
+export default App
