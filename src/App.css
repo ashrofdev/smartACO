@@ -116,4 +116,7 @@ img {
         justify-content: center;
         align-items: center;
     }
+    body {
+        height: 100vh;
+    }
 } 
