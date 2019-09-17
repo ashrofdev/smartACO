@@ -9,7 +9,7 @@ const Content = ({msg}) => {
                     <img className="smart" src={require('../smartaco.gif')}/>
                 </header>
                 <div className="request">
-                    <input placeholder="Chat with smarta..."/>
+                    <input placeholder="Chat with SmartAco..."/>
                     <div className="smarta">{msg}</div>
                 </div>
                 </div>
