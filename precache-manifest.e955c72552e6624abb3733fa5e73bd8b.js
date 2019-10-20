@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a8b43de7354c657356fb3aec773629be",
+    "revision": "b82e6b39666e5c43d487d867f4c27dbb",
     "url": "/smartACO/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/smartACO/static/css/2.aaf86575.chunk.css"
   },
   {
-    "revision": "b1e3b8da3396569aa43e",
+    "revision": "245b0d90b88b15652456",
     "url": "/smartACO/static/css/main.f26e0b95.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/smartACO/static/js/2.40a8b625.chunk.js"
   },
   {
-    "revision": "b1e3b8da3396569aa43e",
-    "url": "/smartACO/static/js/main.794bbff9.chunk.js"
+    "revision": "245b0d90b88b15652456",
+    "url": "/smartACO/static/js/main.3c31623c.chunk.js"
   },
   {
     "revision": "7b32b0030dde31a941ff",

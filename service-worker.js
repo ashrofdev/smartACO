@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/smartACO/precache-manifest.204a5dd142640b5459c952bfbdc22d7e.js"
+  "/smartACO/precache-manifest.e955c72552e6624abb3733fa5e73bd8b.js"
 );
 
 self.addEventListener('message', (event) => {
